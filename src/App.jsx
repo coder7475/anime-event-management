@@ -1,10 +1,7 @@
-import Brand from "./components/Brand/Brand"
-
 function App() {
 
   return (
     <>
-      <Brand></Brand>
       <h1 className="text-5xl font-bold font-display bg-charcoal text-white">Anime Festivals</h1>
     </>
   )
