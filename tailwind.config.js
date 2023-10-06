@@ -10,6 +10,14 @@ export default {
         display : "'Titillium Web', sans-serif",
       },
     },
+    colors: {
+      'white': '#FFF',
+      'charcoal': '#264653',
+      'persianGreen': '#2A9D8F',
+      'saffron': '#E9C46A',
+      'sandyBrown': '#F4A261',
+      'burntSienna': '#E76F51',
+    },
   },
   plugins: [],
 }
