@@ -19,5 +19,5 @@ export default {
       'burntSienna': '#E76F51',
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
