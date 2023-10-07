@@ -2,11 +2,11 @@ function ServiceCard({ service }) {
   const { name, image, price, description} = service;
   return (
     <div className="card bg-base-100 border-2 justify-center items-center">
-      <figure className="px-10 pt-10">
+      <figure className="px-10 pt-10 w-full">
         <img
           src={image}
           alt="Shoes"
-          className="rounded-xl"
+          className="rounded-xl h-44 w-full"
         />
       </figure>
       <div className="card-body items-center text-center">
