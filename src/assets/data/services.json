@@ -4,41 +4,41 @@
     "name": "Anime Convention",
     "image": "https://i.ibb.co/Lhm5rPX/convention.jpg",
     "price": "$50K - $150K",
-    "description": "Join the ultimate anime gathering with panels, cosplay, merchandise, and celebrity guests."
+    "description": "Prepare to embark on an unforgettable journey into the vibrant world of anime at our annual Anime Convention. This event is a true celebration of anime culture, drawing fans from all corners of the globe to immerse themselves in a weekend of excitement and camaraderie. At our Anime Convention, you'll find a rich tapestry of activities and experiences that cater to every facet of anime fandom. For cosplay enthusiasts, we offer a dazzling array of opportunities to showcase your creativity. Join our cosplay contests, attend workshops to perfect your costume-making skills, and meet like-minded cosplayers who share your passion."
   },
   {
     "id": "2",
     "name": "Cosplay Event",
     "image": "https://i.ibb.co/JRKRC9H/cosplay-1.jpg",
     "price": "$20K - $50K",
-    "description": "Showcase your cosplay skills and meet fellow cosplayers in a fun and creative atmosphere."
+    "description": "Prepare to step into the enchanting world of cosplay at our Cosplay Event. This event is a haven for cosplay enthusiasts looking to express their love for their favorite characters and immerse themselves in a world of creativity and imagination.Our Cosplay Event is a celebration of artistic expression and the passion that drives cosplayers to bring their favorite characters to life. Whether you're a seasoned cosplayer with a portfolio of intricate costumes or someone just starting out on your cosplay journey, you'll find a supportive and inclusive community waiting to welcome you with open arms."
   },
   {
     "id": "3",
     "name": "Anime Screening",
     "image": "https://i.ibb.co/NZRSt2h/screening.jpg",
     "price": "$10K - $20K",
-    "description": "Enjoy exclusive screenings of your favorite anime series and movies on the big screen."
+    "description": "Indulge in the magic of anime on the big screen at our Anime Screening event. Immerse yourself in the captivating stories, stunning visuals, and epic adventures that anime has to offer, all in the company of fellow fans.Step into our cinema-like setting, complete with high-quality sound and visuals, and experience the thrill of watching anime on the big screen. It's a chance to share the excitement with friends and fellow fans, creating a sense of unity as you collectively react to the emotions and action that come to life before your eyes."
   },
   {
     "id": "4",
     "name": "Voice Actor Appearance",
     "image": "https://i.ibb.co/QDrGttz/voice.jpg",
     "price": "$30K - $100K",
-    "description": "Meet and interact with renowned voice actors and industry professionals."
+    "description": "Our 'Voice Actor Appearance' event is a celebration of the talent and creativity that brings your favorite anime characters to life. It's a unique opportunity to meet the voices behind the characters you love, gain insights into the art of voice acting, and delve into the inner workings of the anime industry.Whether you're an aspiring voice actor, a dedicated fan, or simply curious about the inner workings of the anime industry, our event promises a day filled with inspiration, knowledge, and memorable interactions. Join us for an immersive journey into the world of voice acting, storytelling, and the magic of anime. It's an experience that will deepen your connection to the art form and leave you with a profound appreciation for the talent that makes it all possible."
   },
   {
     "id": "5",
     "name": "Anime Merchandise Store",
     "image": "https://i.ibb.co/yPCJC5f/store.jpg",
     "price": "Varies",
-    "description": "Shop for a wide range of anime collectibles, posters, apparel, and more."
+    "description": "Our Anime Merchandise Store is a paradise for fans looking to expand their anime collections or discover new and exciting pieces of memorabilia. From stunning figurines and detailed art prints to intricately designed apparel and exclusive items, our store offers a diverse range of products that cater to every taste and interest.Explore the aisles of our store, each filled with a unique and carefully curated selection of anime merchandise. Whether you're seeking rare and limited-edition items to add to your collection or simply want to adorn your living space with anime-themed decor, you'll find a treasure trove of options to choose from."
   },
   {
     "id": "6",
     "name": "Anime Travel Tour",
     "image": "https://i.ibb.co/B6fjSWZ/tour-1.jpgtravel_tour.jpg",
     "price": "$2K - $4",
-    "description": "Embark on a guided tour to explore anime-related locations in Japan and beyond."
+    "description": "Imagine walking the bustling streets of Tokyo's Akihabara district, where you'll find stores filled with anime merchandise and themed cafes dedicated to your favorite series. Or visiting the tranquil landscapes that inspired the breathtaking scenery in Studio Ghibli films, where you can relive the magic of these beloved animations.As part of our guided tour, you'll have the chance to step behind the scenes at animation studios, meet industry professionals, and gain insights into the creative process behind the anime you adore. Visit the very locations that served as inspiration for famous series and witness the rich cultural heritage that permeates each frame of these remarkable animations."
   }
 ]
