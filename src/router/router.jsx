@@ -4,6 +4,8 @@ import Home from "../pages/Home/Home";
 import ServiceDetails from "../pages/ServiceDetails/ServiceDetails";
 import serviceLoader from "../assets/utilities/serviceLoader";
 import ErrorPage from "../pages/Error/Error";
+import Registration from "../pages/Registration/Registration";
+import Login from "../pages/Login/Login";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,14 @@ const router = createBrowserRouter([
         element: <ServiceDetails />,
         loader: serviceLoader,
       },
-      
+      {
+        path: "/registration",
+        element: <Registration/>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      }
     ],
   },
 ]);

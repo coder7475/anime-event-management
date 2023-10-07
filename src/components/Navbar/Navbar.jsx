@@ -16,7 +16,7 @@ function Navbar() {
         </li>
         <li className="text-center">
           <NavLink
-            to="/Login"
+            to="/login"
             
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
@@ -27,7 +27,7 @@ function Navbar() {
         </li>
         <li className="text-center">
           <NavLink
-            to="/register"
+            to="/registration"
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
             }
