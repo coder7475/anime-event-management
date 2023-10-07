@@ -10,7 +10,7 @@ function Team() {
       .then(data => setMembers(data));
   },[]);
 
-  console.log(members);
+  // console.log(members);
 
   return (
     <div className="mt-20 mb-40 max-w-5xl mx-auto">

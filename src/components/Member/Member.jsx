@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Member({ member }) {
   const {name, image} = member;
   return (
@@ -11,5 +13,10 @@ function Member({ member }) {
     </div>
   )
 }
+
+Member.propTypes = {
+  member: PropTypes.object,
+}
+
 
 export default Member;
