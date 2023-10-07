@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ServiceCard({ service }) {
   console.log(typeof service);
-  const { name, image, price, description } = service;
+  const { id, name, image, price, description } = service;
   return (
     <div className="card justify-center items-center shadow-xl ">
       <figure className="px-10 pt-10 w-full">
@@ -17,7 +17,7 @@ function ServiceCard({ service }) {
         <p className="text-xl font-medium h-28">{description}</p>
         <div className="card-actions">
           <button className="btn bg-burntSienna text-white text-lg font-semibold">
-            <NavLink to="/serviceDetails">View Details</NavLink>
+            <NavLink to={`/${id}`}>View Details</NavLink>
           </button>
         </div>
       </div>
