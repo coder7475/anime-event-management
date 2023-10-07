@@ -3,28 +3,28 @@
     "id": "1",
     "name": "Anime Convention",
     "image": "https://i.ibb.co/Lhm5rPX/convention.jpg",
-    "price": "$50 - $150",
+    "price": "$50K - $150K",
     "description": "Join the ultimate anime gathering with panels, cosplay, merchandise, and celebrity guests."
   },
   {
     "id": "2",
     "name": "Cosplay Event",
     "image": "https://i.ibb.co/JRKRC9H/cosplay-1.jpg",
-    "price": "$20 - $50",
+    "price": "$20K - $50K",
     "description": "Showcase your cosplay skills and meet fellow cosplayers in a fun and creative atmosphere."
   },
   {
     "id": "3",
     "name": "Anime Screening",
     "image": "https://i.ibb.co/NZRSt2h/screening.jpg",
-    "price": "$10 - $20",
+    "price": "$10K - $20K",
     "description": "Enjoy exclusive screenings of your favorite anime series and movies on the big screen."
   },
   {
     "id": "4",
     "name": "Voice Actor Appearance",
     "image": "https://i.ibb.co/QDrGttz/voice.jpg",
-    "price": "$30 - $100",
+    "price": "$30K - $100K",
     "description": "Meet and interact with renowned voice actors and industry professionals."
   },
   {
@@ -38,7 +38,7 @@
     "id": "6",
     "name": "Anime Travel Tour",
     "image": "https://i.ibb.co/B6fjSWZ/tour-1.jpgtravel_tour.jpg",
-    "price": "$2,000 - $4,000",
+    "price": "$2K - $4",
     "description": "Embark on a guided tour to explore anime-related locations in Japan and beyond."
   }
 ]
