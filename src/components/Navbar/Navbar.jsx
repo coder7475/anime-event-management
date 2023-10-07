@@ -8,7 +8,7 @@ function Navbar() {
           <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
+              isPending ? "pending" : isActive ? "active border p-2" : ""
             }
           >
             Home
@@ -16,10 +16,9 @@ function Navbar() {
         </li>
         <li className="text-center">
           <NavLink
-            to="/login"
-            
+            to="/login" 
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
+              isPending ? "pending" : isActive ? "active border p-2" : ""
             }
           >
             Login
@@ -29,7 +28,7 @@ function Navbar() {
           <NavLink
             to="/registration"
             className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
+              isPending ? "pending" : isActive ? "active border p-2" : ""
             }
           >
             Register
