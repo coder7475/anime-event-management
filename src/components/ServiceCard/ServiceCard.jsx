@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 function ServiceCard({ service }) {
+  console.log(typeof service);
   const { name, image, price, description } = service;
   return (
     <div className="card justify-center items-center shadow-xl ">
@@ -23,4 +25,10 @@ function ServiceCard({ service }) {
   );
 }
 
+ServiceCard.propTypes = {
+  service: PropTypes.object,
+}
+
+
 export default ServiceCard;
+
