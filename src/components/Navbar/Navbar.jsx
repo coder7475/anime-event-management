@@ -16,35 +16,26 @@ function Navbar() {
         </li>
         <li className="text-center">
           <NavLink
-            to="/#about"
+            to="/Login"
             
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
             }
           >
-            About us
+            Login
           </NavLink>
         </li>
         <li className="text-center">
           <NavLink
-            to="/services"
+            to="/register"
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
             }
           >
-            Services
+            Register
           </NavLink>
         </li>
-        <li className="text-center">
-          <NavLink
-            to="/events"
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active" : ""
-            }
-          >
-            Featured Events
-          </NavLink>
-        </li>
+        
       </ul>
     </nav>
   );
