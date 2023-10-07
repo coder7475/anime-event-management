@@ -16,6 +16,17 @@ function Navbar() {
         </li>
         <li className="text-center">
           <NavLink
+            to="/#about"
+            
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            About us
+          </NavLink>
+        </li>
+        <li className="text-center">
+          <NavLink
             to="/services"
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
