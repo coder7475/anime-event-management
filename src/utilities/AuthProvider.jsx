@@ -5,6 +5,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signOut,
 } from "firebase/auth";
 import auth from "../firebase/firebaseApp.config";
 import { GoogleAuthProvider } from "firebase/auth";
@@ -63,6 +64,11 @@ function AuthProvider({ children }) {
   const login = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
+
+  const logOut = () => {
+    setUser(null);
+    return signOut(auth);
+  }
   // implement google sign in
   const provider = new GoogleAuthProvider();
   const googleSignIn = () => {
@@ -75,6 +81,7 @@ function AuthProvider({ children }) {
     user,
     signUp,
     login,
+    logOut,
     googleSignIn,
     notify,
     success,

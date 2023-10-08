@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom';
 import AuthContext from '../../contexts/AuthContext';
 
 function LoggedState() {
-  const { user } = useContext(AuthContext);
-  console.log(user.photoURL);
+  const { user, logOut } = useContext(AuthContext);
+  // console.log(user.photoURL);
+
+
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-10 flex-1">
         <div className='font-bold text-2xl'>
@@ -18,7 +20,7 @@ function LoggedState() {
             />
           </div>
         </div>
-        <div>
+        <div onClick={logOut}>
           <NavLink to={`/login`}>
             <button className="btn font-bold text-xl bg-charcoal text-white px-8">
               LogOut
