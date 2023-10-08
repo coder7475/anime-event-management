@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 
 function Login() {
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get('email');
+    const password = form.get('password');
+    console.log(email, password);
+  }
+
   return (
     <div className="hero mt-20 mb-20 py-10">
       <div className="hero-content flex-col">
@@ -8,15 +16,17 @@ function Login() {
           <h1 className="text-6xl font-bold mb-10">Login In your Account!</h1>
         </div>
         <div className="card w-full max-w-5xl shadow-xl bg-base-100">
-          <form className="card-body">            
+          <form className="card-body" onSubmit={handleLogin}>            
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-3xl font-semibold">Email</span>
               </label>
               <input
+                name="email"
                 type="email"
                 placeholder="Email"
                 className="input input-bordered"
+                autoComplete="true"
                 required
               />
             </div>
@@ -27,9 +37,11 @@ function Login() {
                 </span>
               </label>
               <input
+                name="password"
                 type="password"
                 placeholder="Password"
                 className="input input-bordered"
+                autoComplete="true"
                 required
               />
             </div>
