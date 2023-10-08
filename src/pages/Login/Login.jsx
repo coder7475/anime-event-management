@@ -5,15 +5,24 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
-  const { googleSignIn } = useContext(AuthContext);
+  const { login, googleSignIn, success, error } = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get('email');
     const password = form.get('password');
-    console.log(email, password);
-    
+    // console.log(email, password);
+    login(email, password)
+      .then(userCredential => {
+        const user = userCredential.user;
+        return success(`${user} successfull logged in!`);
+      })
+      .catch(err => {
+        const errorCode = err.code;
+        const errorMessage = err.message;
+        return error(`${errorCode}: ${errorMessage}`)
+      })
   }
 
 

@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Registration() {
-  const { notify, signUp, googleSignIn } = useContext(AuthContext);
+  const { notify, signUp, googleSignIn, success } = useContext(AuthContext);
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -29,7 +29,7 @@ function Registration() {
     }
 
     signUp(email, password)
-      .then((res) => console.log(res))
+      .then((res) => success(res??"Signed Up successfully!"))
       .catch((err) => notify(err));
   };
 
