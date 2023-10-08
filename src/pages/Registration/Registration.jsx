@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
@@ -7,7 +8,7 @@ import { updateProfile } from "firebase/auth";
 import auth from "../../firebase/firebaseApp.config";
 
 function Registration() {
-  const { notify, signUp, googleSignIn, success } = useContext(AuthContext);
+  const { notify, signUp, googleSignIn, success, logOut } = useContext(AuthContext);
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -35,8 +36,8 @@ function Registration() {
         updateProfile(auth.currentUser, {
           displayName: name, photoURL: profile
         })
-  
-        return success("Signed Up successfully!")
+        logOut();
+        return success("Signed Up successfully!");
       } 
       )
       .catch((err) => notify(err));

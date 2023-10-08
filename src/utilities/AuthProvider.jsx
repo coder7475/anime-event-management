@@ -57,9 +57,7 @@ function AuthProvider({ children }) {
     });
   const error = (msg) => toast.error(`${msg}`);
 
-  const signUp = (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password);
-  };
+  
 
   const login = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
@@ -69,6 +67,11 @@ function AuthProvider({ children }) {
     setUser(null);
     return signOut(auth);
   }
+
+  const signUp = (email, password) => {
+    logOut();
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
   // implement google sign in
   const provider = new GoogleAuthProvider();
   const googleSignIn = () => {
