@@ -35,8 +35,8 @@ function Registration() {
         updateProfile(auth.currentUser, {
           displayName: name, photoURL: profile
         })
-        console.log(res);
-        return success(res??"Signed Up successfully!")
+  
+        return success("Signed Up successfully!")
       } 
       )
       .catch((err) => notify(err));
