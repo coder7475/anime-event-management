@@ -15,6 +15,15 @@ function Registration() {
     const password = form.get('password');
 
     console.log(email, password, name, profile);
+    console.log(password);
+
+    // password validation
+    const re = /(?=.*[A-Z])(?=.*[\W_]).{6,}/g;
+    const ans = re.test(password);
+    // console.log(ans);
+    if (!ans) {
+      return console.log("password is not valid");
+    }
 
     signUp(email, password)
       .then(res => console.log(res))
