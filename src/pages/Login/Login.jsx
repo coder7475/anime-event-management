@@ -74,7 +74,7 @@ function Login() {
             </div>
           </form>
         </div>
-        <h1 className="text-xl text-center font-semibold p-5 text-persianGreen">Or</h1>
+        <div className="divider">OR</div>
         <div className="card w-full bg-base-100 shadow-xl max-w-5xl">
           <button className="btn w-full rounded-xl text-xl font-semibold" onClick={googleSignIn}>
             <svg
