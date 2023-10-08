@@ -14,16 +14,7 @@ function Navbar() {
             Home
           </NavLink>
         </li>
-        <li className="text-center">
-          <NavLink
-            to="/login" 
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active border p-2" : ""
-            }
-          >
-            Login
-          </NavLink>
-        </li>
+        
         <li className="text-center">
           <NavLink
             to="/registration"
@@ -34,7 +25,16 @@ function Navbar() {
             Register
           </NavLink>
         </li>
-        
+        <li className="text-center">
+          <NavLink
+            to="/login" 
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active border p-2" : ""
+            }
+          >
+            Login
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
