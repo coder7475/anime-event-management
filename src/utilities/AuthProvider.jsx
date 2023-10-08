@@ -11,6 +11,8 @@ function AuthProvider({ children }) {
     return createUserWithEmailAndPassword(auth, email, password );
   }
 
+
+
   const authInfo = {
     signUp,
   };
