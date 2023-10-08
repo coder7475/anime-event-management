@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const { googleSignIn } = useContext(AuthContext);
@@ -93,6 +95,8 @@ function Login() {
           </button>
         </div>
       </div>
+      <ToastContainer />
+
     </div>
   )
 }

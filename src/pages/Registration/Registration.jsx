@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Registration() {
-  const { signUp, googleSignIn } = useContext(AuthContext);
+  const { notify, signUp, googleSignIn } = useContext(AuthContext);
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -22,22 +22,7 @@ function Registration() {
     // password validation
     const re = /(?=.*[A-Z])(?=.*[\W_]).{6,}/g;
     const ans = re.test(password);
-    const notify = (err) =>
-      toast.error(
-        err
-          ? `You already have an account`
-          : `Your Password must be atleast 6 character long, conatin 1 Uppercase and 1 special character.`,
-        {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "colored",
-        }
-      );
+    
     // console.log(ans);
     if (!ans) {
       return notify();
