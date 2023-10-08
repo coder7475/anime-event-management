@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 function Root() {
   return (
-    <main className="font-display">
+    <main className="font-display ">
       <Brand/>
       <Navbar/>
       <Outlet/>
