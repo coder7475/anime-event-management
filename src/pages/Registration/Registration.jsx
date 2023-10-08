@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { updateProfile } from "firebase/auth";
+import auth from "../../firebase/firebaseApp.config";
 
 function Registration() {
   const { notify, signUp, googleSignIn, success } = useContext(AuthContext);
@@ -27,9 +29,16 @@ function Registration() {
     if (!ans) {
       return notify();
     }
-
+    
     signUp(email, password)
-      .then((res) => success(res??"Signed Up successfully!"))
+      .then((res) => {
+        updateProfile(auth.currentUser, {
+          displayName: name, photoURL: profile
+        })
+        console.log(res);
+        return success(res??"Signed Up successfully!")
+      } 
+      )
       .catch((err) => notify(err));
   };
 

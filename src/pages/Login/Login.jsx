@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
@@ -15,8 +16,8 @@ function Login() {
     // console.log(email, password);
     login(email, password)
       .then(userCredential => {
-        const user = userCredential.user;
-        return success(`${user} successfull logged in!`);
+        console.log(userCredential);
+        return success(`Successfull logged in!`);
       })
       .catch(err => {
         const errorCode = err.code;

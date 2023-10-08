@@ -2,6 +2,7 @@ import AuthContext from "../contexts/AuthContext";
 import PropTypes from "prop-types";
 import {
   createUserWithEmailAndPassword,
+  onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
@@ -9,8 +10,21 @@ import auth from "../firebase/firebaseApp.config";
 import { GoogleAuthProvider } from "firebase/auth";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useEffect, useState } from "react";
 
 function AuthProvider({ children }) {
+  const [user, setUser] = useState(null);
+
+  // console.log(user);
+
+  useEffect(() => {
+    const unSubscribe = onAuthStateChanged(auth, currentUser => {
+      // console.log("user in the auth state changed", currentUser);
+      setUser(currentUser);
+    });
+    return () => unSubscribe();
+  }, []);
+
   const notify = (err) => {
     return toast.error(
       err
@@ -58,6 +72,7 @@ function AuthProvider({ children }) {
   };
 
   const authInfo = {
+    user,
     signUp,
     login,
     googleSignIn,
