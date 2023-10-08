@@ -4,9 +4,11 @@ function Registration() {
   const handleSignUp = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
+    const name = form.get('name');
+    const profile = form.get('profile');
     const email = form.get('email');
     const password = form.get('password');
-    console.log(email, password);
+    console.log(email, password, name, profile);
   }
 
   return (
@@ -70,7 +72,7 @@ function Registration() {
               />
             </div>
             <div className="text-xl font-medium mt-6">
-              <p>Already Have an Account? Please <Link to={`/login`} className="text-saffron font-bold">Login</Link></p>
+              <p>Already Have an Account? Please <Link to={`/login`} className="text-saffron text-2xl font-bold">Login</Link></p>
             </div>
             <div className="form-control mt-6">
               <button className="btn bg-burntSienna text-white text-xl">

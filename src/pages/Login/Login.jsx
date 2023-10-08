@@ -46,7 +46,7 @@ function Login() {
               />
             </div>
             <div className="text-xl font-medium mt-6">
-              <p>Don&apos;t Have an Account yet? Please <Link to={`/registration`} className="text-saffron font-bold">Sign Up</Link></p>
+              <p>Don&apos;t Have an Account yet? Please <Link to={`/registration`} className="text-saffron font-bold text-2xl">Sign Up</Link></p>
             </div>
             <div className="form-control mt-6">
               <button className="btn bg-burntSienna text-white text-xl">
