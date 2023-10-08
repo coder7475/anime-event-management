@@ -24,10 +24,11 @@ function Login() {
         <div className="card w-full max-w-5xl shadow-xl bg-base-100">
           <form className="card-body" onSubmit={handleLogin}>            
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="email">
                 <span className="label-text text-3xl font-semibold">Email</span>
               </label>
               <input
+                id="email"
                 name="email"
                 type="email"
                 placeholder="Email"
@@ -37,12 +38,13 @@ function Login() {
               />
             </div>
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="password">
                 <span className="label-text text-3xl font-semibold">
                   Password
                 </span>
               </label>
               <input
+                id="password"
                 name="password"
                 type="password"
                 placeholder="Password"

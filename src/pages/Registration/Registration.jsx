@@ -57,24 +57,27 @@ function Registration() {
         <div className="card w-full max-w-5xl shadow-xl bg-base-100">
           <form className="card-body" onSubmit={handleSignUp}>
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="name">
                 <span className="label-text text-3xl font-semibold">Name</span>
               </label>
               <input
+                id="name"
                 name="name"
                 type="text"
                 placeholder="Your"
                 className="input input-bordered"
+                autoComplete="true"
                 required
               />
             </div>
-            <div className="form-control">
+            <div className="form-control" htmlFor="profile">
               <label className="label">
                 <span className="label-text text-3xl font-semibold">
                   Profile
                 </span>
               </label>
               <input
+                id="profile"
                 name="profile"
                 type="text"
                 placeholder="Profile Picture URL"
@@ -84,10 +87,11 @@ function Registration() {
               />
             </div>
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="email">
                 <span className="label-text text-3xl font-semibold">Email</span>
               </label>
               <input
+                id="email"
                 name="email"
                 type="email"
                 placeholder="Email"
@@ -97,16 +101,18 @@ function Registration() {
               />
             </div>
             <div className="form-control">
-              <label className="label">
+              <label className="label" htmlFor="password">
                 <span className="label-text text-3xl font-semibold">
                   Password
                 </span>
               </label>
               <input
+                id="password"
                 name="password"
                 type="password"
                 placeholder="Password"
                 className="input input-bordered"
+                autoComplete="true"
                 required
               />
             </div>
