@@ -20,10 +20,13 @@ function Login() {
         return success(`Successfull logged in!`);
       })
       .catch(err => {
-        console.log(err);
+        // console.log(err);
         const errorCode = err.code;
         console.log(errorCode);
+        
         const errorMessage = err.message;
+        console.log(errorMessage);
+
         if (errorCode === "auth/invalid-login-credentials")
           return error(`Invalid Email OR Password`);
       })
