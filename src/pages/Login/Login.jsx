@@ -1,13 +1,19 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import AuthContext from "../../contexts/AuthContext";
 
 function Login() {
+  const { googleSignIn } = useContext(AuthContext);
+
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get('email');
     const password = form.get('password');
     console.log(email, password);
+    
   }
+
 
   return (
     <div className="hero mt-20 mb-20 py-10">
@@ -57,7 +63,7 @@ function Login() {
         </div>
         <h1 className="text-xl text-center font-semibold p-5 text-persianGreen">Or</h1>
         <div className="card w-full bg-base-100 shadow-xl max-w-5xl">
-          <button className="btn w-full rounded-xl text-xl font-semibold">
+          <button className="btn w-full rounded-xl text-xl font-semibold" onClick={googleSignIn}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -81,7 +87,7 @@ function Login() {
                 d="M12 5.25c1.77 0 3.36.61 4.61 1.92l3.45-3.45C18.23 1.19 15.38 0 12 0 7.99 0 4.39 2.34 2.37 5.75l4.05 3.24c1-.62 2.76-1.74 5.58-1.74z"
               />
             </svg>
-            SignIn with Google
+            LOGIN with Google
           </button>
         </div>
       </div>
