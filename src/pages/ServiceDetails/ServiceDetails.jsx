@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 function ServiceDetails() {
   const services = useLoaderData();
@@ -6,9 +7,10 @@ function ServiceDetails() {
   const service = services.find((service) => service.id === Id.serviceId);
   // console.log(service);
   const { name, image, price, description } = service;
-  console.log(name);
+  // console.log(name);
   return (
     <div className="relative flex w-full max-w-5xl mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mb-20 mt-10 ">
+      <ToastContainer/>
       <div className="relative shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
         <figure className="h-2/3">
           <img src={image} alt="image" className="w-full h-[650px]" />

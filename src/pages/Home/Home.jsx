@@ -6,6 +6,7 @@ import Services from "../../components/Services/Services";
 import Team from "../../components/Team/Team";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer } from "react-toastify";
 
 function Home() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function Home() {
 
   return (
     <>
+      <ToastContainer/>
       <div
         data-aos="fade-up"
         data-aos-easing="linear"
@@ -28,7 +30,7 @@ function Home() {
       >
         <AboutUs></AboutUs>
       </div>
-      <div data-aos="fade-down">
+      <div data-aos="fade-up">
         <Services></Services>
       </div>
       <div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="ease-in-back">

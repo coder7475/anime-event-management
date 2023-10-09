@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -9,7 +9,7 @@ import auth from "../../firebase/firebaseApp.config";
 
 function Registration() {
   const { notify, signUp, googleSignIn, success, logOut } = useContext(AuthContext);
-
+  const navigate = useNavigate();
   const handleSignUp = (e) => {
     e.preventDefault();
 
@@ -38,6 +38,7 @@ function Registration() {
         })
           .then(res => success("Signed Up successfully! Please Login."))
           logOut();
+          navigate("/login");
       } 
       )
       .catch((err) => notify(err));

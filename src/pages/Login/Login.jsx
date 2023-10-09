@@ -1,13 +1,15 @@
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const { login, googleSignIn, success, error } = useContext(AuthContext);
-
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log(location);
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -16,7 +18,8 @@ function Login() {
     // console.log(email, password);
     login(email, password)
       .then(userCredential => {
-        console.log(userCredential);
+        // console.log(userCredential);
+        navigate(location?.state ? location.state : "/");
         return success(`Successfull logged in!`);
       })
       .catch(err => {
