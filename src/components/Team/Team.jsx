@@ -5,7 +5,7 @@ function Team() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    fetch("/src/assets/data/members.json")
+    fetch("/data/members.json")
       .then(res => res.json())
       .then(data => setMembers(data));
   },[]);

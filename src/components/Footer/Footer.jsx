@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className="footer footer-center  bg-charcoal text-primary-content mt-10 py-10">
       <aside className="">
-        <img src="/src/assets/images/newLogo.png" alt="logo" className="h-32 mb-10"/>
+        <img src="/images/newLogo.png" alt="logo" className="h-32 mb-10"/>
         <p className="font-bold text-xl">
           Anime Festivals Inc. <br />
           Providing reliable service since 2000
