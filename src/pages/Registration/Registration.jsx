@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -36,8 +36,8 @@ function Registration() {
         updateProfile(auth.currentUser, {
           displayName: name, photoURL: profile
         })
-        logOut();
-        return success("Signed Up successfully!");
+          .then(res => success("Signed Up successfully! Please Login."))
+          logOut();
       } 
       )
       .catch((err) => notify(err));

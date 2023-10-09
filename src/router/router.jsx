@@ -6,6 +6,7 @@ import serviceLoader from "../utilities/serviceLoader";
 import ErrorPage from "../pages/Error/Error";
 import Registration from "../pages/Registration/Registration";
 import Login from "../pages/Login/Login";
+import PrivateRoute from "../routes/PrivateRoutes";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/:serviceId",
-        element: <ServiceDetails />,
+        element: <PrivateRoute><ServiceDetails /></PrivateRoute> ,
         loader: serviceLoader,
       },
       {
