@@ -19,6 +19,10 @@ Event Management Website - Anime Events
 - Personal Info page shows users details
 - A Error Page is shown for wrong route
 
+## Accounts
+  For checking:
+  - email: luffy@onepiece.com password: 123AB!
+  - email: robin@onepiece.com password: 123AB!
 
 ## Authors
 
