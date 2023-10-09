@@ -3,13 +3,13 @@ import AuthContext from "../../contexts/AuthContext";
 
 function AccountDetails() {
   const { user } = useContext(AuthContext);
-  console.log(user);
+  // console.log(user);
   return (
     <div className="flex flex-col justify-center items-center mb-20">
       <h1 className="text-5xl font-semibold text-center my-10">
         Personal Info
       </h1>
-      <div className="relative flex flex-col items-start justify-center rounded-xl bg-white bg-clip-border text-gray-700 shadow-md p-10">
+      <div className="relative flex flex-col items-start justify-center rounded-xl bg-white bg-clip-border text-gray-700 shadow-md py-10">
         <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
           <img
             src={user.photoURL}
