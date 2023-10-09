@@ -15,13 +15,14 @@ import { useEffect, useState } from "react";
 
 function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-
+  const [loading, setLoading] = useState(true);
   // console.log(user);
 
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, currentUser => {
       // console.log("user in the auth state changed", currentUser);
       setUser(currentUser);
+      setLoading(false);
     });
     return () => unSubscribe();
   }, []);
@@ -60,28 +61,33 @@ function AuthProvider({ children }) {
   
 
   const login = (email, password) => {
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
     setUser(null);
+    setLoading(true);
     return signOut(auth);
   }
 
   const signUp = (email, password) => {
-    logOut();
+    // logOut();
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
   // implement google sign in
   const provider = new GoogleAuthProvider();
   const googleSignIn = () => {
-    signInWithPopup(auth, provider)
+    setLoading(true);
+    return signInWithPopup(auth, provider)
       .then((res) => success(res))
       .catch((err) => error(err));
   };
 
   const authInfo = {
     user,
+    loading,
     signUp,
     login,
     logOut,
