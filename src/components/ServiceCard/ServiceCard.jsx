@@ -5,8 +5,8 @@ function ServiceCard({ service }) {
   // console.log(typeof service);
   const { id, name, image, price, description } = service;
   return (
-    <div className="card justify-center items-center shadow-xl ">
-      <figure className="px-10 pt-10 w-full">
+    <div className="card justify-center items-center shadow-xl">
+      <figure className="py-10  w-full">
         <img src={image} alt="service" className="rounded-xl h-44 w-full" />
       </figure>
       <div className="card-body items-center text-center">
