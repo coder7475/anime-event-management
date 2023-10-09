@@ -33,10 +33,10 @@ function Home() {
       <div data-aos="fade-up">
         <Services></Services>
       </div>
-      <div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="ease-in-back">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-back">
         <Team></Team>
       </div>
-      <div data-aos="flip-down" data-aos-duration="1000" >
+      <div data-aos="fade-down" data-aos-duration="1000" >
         <Footer></Footer>
       </div>
     </>
