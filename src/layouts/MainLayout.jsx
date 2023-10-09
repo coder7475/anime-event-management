@@ -21,6 +21,7 @@ function Root() {
       <div 
         data-aos="fade-down"
         data-aos-duration="3000"
+        className="bg-charcoal"
       >
         <Navbar/>
       </div>

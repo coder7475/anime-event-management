@@ -10,9 +10,9 @@ function ServiceCard({ service }) {
         <img src={image} alt="service" className="rounded-xl h-44 w-full" />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title text-2xl text-persianGreen font-bold h-16">{name}</h2>
-        <h6 className="text-2xl text-saffron">
-          <span className="font-semibold text-sandyBrown h-10">Price</span>: {price}
+        <h2 className="card-title text-2xl  font-bold h-16">{name}</h2>
+        <h6 className="text-2xl ">
+          <span className="font-semibold h-10">Price</span>: {price}
         </h6>
         <p className="text-xl font-medium h-28">{description.slice(0, 70)}.....</p>
         <div className="card-actions">

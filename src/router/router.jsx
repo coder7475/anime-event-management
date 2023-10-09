@@ -8,6 +8,7 @@ import Registration from "../pages/Registration/Registration";
 import Login from "../pages/Login/Login";
 import PrivateRoute from "../routes/PrivateRoutes";
 import AccountDetails from "../pages/AccountDetails/AccountDetails";
+import FeaturedEvent from "../pages/FeaturedEvents.jsx/FeaturedEvents";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/event",
+        element: <PrivateRoute><FeaturedEvent /></PrivateRoute> ,
       },
       {
         path: "/:serviceId",

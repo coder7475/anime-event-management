@@ -8,7 +8,7 @@ function Navbar() {
   const { user } = useContext(AuthContext);
 
   return (
-    <nav className="bg-persianGreen text-white flex flex-col lg:flex-row justify-between items-center gap-10 py-5">
+    <nav className="bg-charcoal max-w-7xl mx-auto px-10 text-white flex flex-col lg:flex-row justify-between items-center gap-10 py-5">
       <ul className="flex flex-col md:flex-row justify-center flex-1 align-center gap-4 md:gap-20 text-3xl ">
         <li className="text-center">
           <NavLink
@@ -24,7 +24,20 @@ function Navbar() {
             Home
           </NavLink>
         </li>
-
+        <li className="text-center">
+          <NavLink
+            to="/event"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "pending"
+                : isActive
+                ? "active  font-bold"
+                : ""
+            }
+          >
+            Featured Event
+          </NavLink>
+        </li>
         <li className="text-center">
           <NavLink
             to="/registration"

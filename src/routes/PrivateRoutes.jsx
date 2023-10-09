@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function PrivateRoute({ children }) {
   const { user, loading } = useContext(AuthContext);
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
   if (loading)
     return (
       <div className="w-full flex justify-center items-center ">
