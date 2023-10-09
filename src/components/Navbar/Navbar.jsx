@@ -17,7 +17,7 @@ function Navbar() {
               isPending
                 ? "pending"
                 : isActive
-                ? "active border p-2 font-bold"
+                ? "active  font-bold"
                 : ""
             }
           >
@@ -32,7 +32,7 @@ function Navbar() {
               isPending
                 ? "pending"
                 : isActive
-                ? "active border p-2 font-bold"
+                ? "active  font-bold"
                 : ""
             }
           >
@@ -46,13 +46,29 @@ function Navbar() {
               isPending
                 ? "pending"
                 : isActive
-                ? "active border p-2 font-bold"
+                ? "active  font-bold"
                 : ""
             }
           >
             Login
           </NavLink>
         </li>
+
+        <li className="text-center">
+          <NavLink
+            to="/account"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "pending"
+                : isActive
+                ? "active font-bold"
+                : ""
+            }
+          >
+            Personal Info
+          </NavLink>
+        </li>
+        
       </ul>
       
       {
