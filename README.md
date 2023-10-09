@@ -2,6 +2,9 @@
 
 Event Management Website - Anime Events
 
+# Live Link
+
+### https://anime-events-fcd7a.web.app/
 
 ## Features
 
