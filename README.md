@@ -1,8 +1,22 @@
-# React + Vite
+# Project Title
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Event Management Website - Anime Events
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Service Data Display on Home Page in Card Form
+- View Service Details upon clicking Service card
+- Registration and Login using email and password
+- Signin using google account
+- Show Toast for invalid password or already registered
+- Show Toast for invalid login
+- Show name, profile pic and logout button upon login
+- Three protected routes shown only on login
+- Personal Info page shows users details
+- A Error Page is shown for wrong route
+
+
+## Authors
+
+- [@coder7475](https://github.com/coder7475)
