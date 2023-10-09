@@ -24,7 +24,7 @@ function Home() {
         <Banner></Banner>
       </div>
       <div
-        data-aos="flip-up"
+        data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="10000"
       >
