@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>Variable spelling is wrong here. First line declared `greeting`. But second line assigned an empty object to `greetign` which is a totally different variable form `greeting`. So third line gives `ReferenceError`` as greetign is not declared before assigned value.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>Console logging `console.log(sum(1, "2"))` gives a result `12`. Because of implicit type conversion. When two variable is of different type JS automatically converts one variable to the type of another variable. In case of this example JS converts `number` 1 to `string` 1 which makes `+` operation a `concatenation` instead of `addition`.</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Simply because we are console logging food variable which is of type `array`. The 2-3 lines deals with info `object` which takes a value of food as favourite food and changes its value once. But that does not do any change to our food variable. So food varaible remains unchanged.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>When calling the sayHi function we are not passing any value. So name variable will be initialized as `undefined` and so we get output as `Hi there, undefined`. Usually it is recommanded to set a default value for name variable so that output is meaningful.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>He a forEach method is used to loop througn the nums array and count accourding to provided condition. In JS number `0` equats to `boolean:false` and any other number equats to `boolean:true`. So when the if condition inside forEach method encounters 0, it doesn't execute `count += 1`. So count is 3 when there are 4 numbers in nums array as 0 equats to false.</i>
 
 </p>
 </details>
